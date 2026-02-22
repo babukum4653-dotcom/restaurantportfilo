@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: rgb(79, 11, 116);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color:red;
+      color: rgb(230, 228, 239);
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+
+    nav {
+      background: #16128f;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project {
+      background: rgb(21, 158, 83);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #4CAF50;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+
+    form input,
+    form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #45a049;
+    }
+
+    #formMessage {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ddd;
+      margin-top: 2rem;
+    }
+    /* ✅ Members Section CSS */
+    .members {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .member {
+      width: 180px;
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-8px);
+    }
+
+    .member img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+
+    .member h3 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+      color: #444;
+    }
+
+    .member p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* ✅ Gallery CSS */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+  <i><b><h1> TASTE OF INDIA  </h1></b></i> 
+  </header>
+         
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Order</a>
+    <a href="#Our Member">Our Member</a>
+  </nav>
+   <style type="text/css">
+            body{
+                background-image: linear-gradient(rgb(172, 8, 95),rgb(64, 18, 133));
+                height: 20;
+                
+            }
+        </style>
+
+  <!-- ✅ About Section -->
+  <section id="about">
+   <strong> <h2> About Me</h2> </strong>
+    <p style="color: rgb(15, 2, 2);">
+      Welcome to <strong>TASTE OF INDIA</strong>!  
+      We believe that food is not just about taste—it’s about creating memories.  
+      Our goal is to serve you dishes made with love, fresh ingredients, and authentic flavors that make every bite special.
+    </p>
+      <!-- ✅ Member Section -->
+       
+   <section id="members">
+    <h2 style="text-align: center; margin-bottom: 30px;">Our Members</h2>
+    <div class="members">
+      <div class="member">
+        <img src="https://i.ibb.co/cK5VPzcn/Whats-App-Image-2025-08-22-at-21-35-05-11f4076c.jpg"  alt="Member 1">
+        <h3>Ankit Kumar</h3>
+        <p>Owner</p>
+      </div>
+      <div class="member">
+        <img src="https://i.ibb.co/TDw8xrXw/Whats-App-Image-2025-11-04-at-20-59-06-e6d2a1e1.jpg" alt="Member 2">
+        <h3>Abhay Kumar</h3>
+        <p>Manager</p>
+      </div>
+      <div class="member">
+        <img src= "https://i.ibb.co/tMRG62ZS/Whats-App-Image-2025-11-03-at-17-26-45-82a7e9a0.jpg" alt="Member 3">
+        <h3>chandan Kumar</h3>
+        <p>Chef</p>
+      </div>
+      <div class="member">
+        <img src="https://i.ibb.co/n8sFmNNd/Whats-App-Image-2025-11-05-at-07-37-38-281811bc.jpg"   alt="Member 4">
+        <h3>suman Ghosh</h3>
+        <p>Staff</p>
+      </div>
+      <div class="member">
+        <img src=" https://i.ibb.co/0R7Y8gYb/Whats-App-Image-2025-11-04-at-20-58-45-25ae0eda.jpg" alt="Member 5">
+        <h3>Ankit Kumar</h3>
+        <p>Staff</p>
+      </div>
+    </div>
+  </section>
+   </div>
+     
+  
+  <!-- ✅ Gallery Section -->
+  <section id="gallery">
+    <h2>Restaurant Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://i.ibb.co/FkJXVmJ4/istockphoto-1446478805-612x612.jpg"alt="Restaurant Image 1">
+      <img src="https://i.ibb.co/gsFcSV0/istockphoto-1829241109-612x612.jpg" alt="Restaurant Image 2">
+      <img src="https://i.ibb.co/ZpJswxrj/restaurant-decoration-1.jpg" alt="Restaurant Image 3">
+      <img src="https://i.ibb.co/cXD0ZBLH/pexels-pixabay-262978.jpg" alt="Restaurant Image 4">
+      <img src="https://i.ibb.co/YFmjCmhC/restaurant4.jpg" alt="Restaurant Image 5">
+      <img src="https://i.ibb.co/chRN4KbB/meal-918638-1280-1.jpg" alt="Restaurant Image 6">
+    </div>
+
+  <!-- ✅ Order Form Section -->
+  <section id="contact">
+    <h2>Table  Order Form</h2>
+    <form action="https://formspree.io/f/xnnbarow" method="POST" id="contactForm">
+      <input type="text" name="customer_name" placeholder="Customer Name" required>
+      <input type="text" name="Table_number" placeholder="Table Number" required>
+      <textarea name="order_details" placeholder="Enter your order..." required></textarea>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+
+      <label><strong>Select Menu Items:</strong></label>
+      <label><input type="checkbox" name="menu_items" value="Tea"> Tea</label>
+      <label><input type="checkbox" name="menu_items" value="Coffee"> Coffee</label>
+      <label><input type="checkbox" name="menu_items" value="Sandwich"> Sandwich</label>
+      <label><input type="checkbox" name="menu_items" value="Juice"> Juice</label>
+      <label><input type="checkbox" name="menu_items" value="Paneer Roll"> Paneer Roll</label>
+       <label><input type="checkbox" name="menu_items" value="aalu finger"> aalu finger</label>
+
+
+      <textarea name="order_notes" placeholder="Any special instructions..."></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+    <div id="formMessage"></div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>© 2026 Ankit Kumar | All rights reserved</p>
+
+    <Address>Address :Ramesh chock Aurangabad bihar    pin code : 824301
+                 
+    </Address>
+  </footer>
+
+  <!-- ✅ JavaScript for Form Handling -->
+  <script>
+    const form = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const data = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        formMessage.style.color = "green";
+        formMessage.textContent = "Thank you! Your order has been placed.";
+        form.reset();
+      } else {
+        formMessage.style.color = "red";
+        formMessage.textContent = "Oops! Something went wrong. Please try again.";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
